@@ -1,17 +1,16 @@
-
-.day{
+.day {
   cursor: pointer;
   min-width: 100px;
 
-  >img{
+  > img {
     width: 70px;
     height: 70px;
   }
-  >p{
+  > p {
     padding: 0 10px;
     margin: 0;
   }
-  &.active{
+  &.active {
     background-color: white;
     color: black;
   }
