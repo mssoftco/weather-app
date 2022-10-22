@@ -52,6 +52,14 @@ function App() {
           alt='Icon'
         />
         <h3 className='fs-3'>{dailyWeathers ? dailyWeathers[selectedDay].weather[0].main : ''}</h3>
+        <h5 className='fs-5'>
+          <span className='text-muted'>Humidity: </span>
+          {dailyWeathers ? dailyWeathers[selectedDay].humidity : ''} %
+        </h5>
+        <h5 className='fs-5'>
+          <span className='text-muted'>Wind speed: </span>
+          {dailyWeathers ? dailyWeathers[selectedDay].wind_speed : ''} km/h
+        </h5>
         <div className='d-flex flex-column flex-md-row justify-content-center'>
           {dailyWeathers &&
             dailyWeathers?.map(
